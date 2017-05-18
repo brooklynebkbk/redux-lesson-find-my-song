@@ -19,19 +19,15 @@ class Main extends Component {
   }
 
   handleFormSubmit(e) {
-      e.preventDefault() // Prevent Page From Reloading
-      this.props.getSongs(this.state.songTitle); // Call api with song title
+
   }
 
   handleSearchFieldChange({ target }) {
-    this.setState({ songTitle: target.value });
+
   }
 
   renderSongs() {
-    const { songs } = this.props;
-    if(songs && songs.length > 0) return songs.map((songs, key) => {
-        return <SongCard key={key} {...songs} />
-    })
+
   }
 
   render() {
